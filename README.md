@@ -7,6 +7,7 @@
 Controller是使用单例模式实现的。
 
 Controller.h
+```cpp
 class Controller {
     static Controller * controller; // 单例
 
@@ -22,8 +23,10 @@ public:
     //      1. 通过getInstance()创建单例
     //      2. 通过destroy()销毁单例
 }
+```
 
 Controller.cpp
+```cpp
 #include "Controller.h"
 
 Controller * Controller::controller = NULL;
@@ -48,3 +51,4 @@ Controller::Controller() {
 Controller::~Controller() {
     // clear
 }
+```
